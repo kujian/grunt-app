@@ -2,7 +2,6 @@
     "home": {
         "name": "博客前端资源",
         "description": "博客前端资源",
-        "path": "home/",
         "css": {},
         "js": {},
         "copy": {}
