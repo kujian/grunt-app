@@ -1,5 +1,5 @@
 /**
- * 易结网前端自动化编译, 请先配置 app.json
+ * 前端自动化编译, 请先配置 app.json
  *
  * @author xieliang
  *
