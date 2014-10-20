@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>嫁拍前端模板</title>
+    <link rel="stylesheet" href="../src/ui/css/reset.css">
+    <link rel="stylesheet" href="../src/ui/css/ui.css">
+    <base target="_blank">
+
+    <style type="text/css">
+        body {
+            padding: 50px;
+            font-size: 14px;
+        }
+
+        dt {
+            font-size: 18px;
+            padding-left: 20px;
+            border-left: 3px solid #98bf55;
+            cursor: pointer;
+            margin-bottom: 10px;
+            transition: border-left-color .3s;
+        }
+
+            dt.is-hidden {
+                border-left-color: #ccc;
+                background-color:#f6f6f6;
+                color:#666;
+            }
+
+                dt.is-hidden + dd {
+                    display: none;
+                }
+
+        dt:hover{background-color:#f6f6f6;}
+
+        dd {
+            padding: 0 0 10px 50px;
+        }
+
+        i {
+            color: #999;
+            padding: 0 5px;
+        }
+
+        b {
+            font-weight: bold;
+            color: #09f;
+        }
+
+    </style>
+</head>
+<body>
+
+    <dl id="j-dl" class="user-select-none">
+        <dt>调试</dt>
+        <dd>
+            <ul>
+                <li>
+                    <a href="demo/debug-api.html">调试后端接口</a>
+                </li>
+            </ul>
+        </dd>
+    </dl>
+
+    <div style="height:1000px;"></div>
+
+
+</body>
+</html>

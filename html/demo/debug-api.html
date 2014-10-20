@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>模拟接口</title>
+    
+    <link rel="stylesheet" type="text/css" href="../../src/ui/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="../../src/ui/css/ui.css">
+
+    <style type="text/css">
+        
+
+
+
+
+    
+        /*公用表单*/
+        .ui-form{}
+        .ui-form-ul > li{zoom:1;padding-left:120px;line-height:32px;padding-top:20px;}
+        .ui-form-ul > li:first-child{padding-top:0;}
+        .ui-form-label{float:left;margin-left:-130px;width:120px;text-align:right;}
+
+        /*单选*/
+        .ui-form-radio{padding-right:20px;cursor:pointer;}
+        .ui-form-radio input{margin-right:3px;}
+        
+        .ui-form-error{color:#f00;}
+
+
+
+        .wrap{padding:30px;font-size:14px;}
+        .wrap > h1{font-size:20px;border-bottom:1px solid  #ccc;line-height:36px;}
+        .ui-form .ui-text{width:400px;}
+        .ui-form .ui-btn{font-size:20px;height:40px;line-height:40px;}
+
+        .post-data .ui-text{width:160px;}
+        .post-data-add{padding-top:10px;}
+        .post-data-list li{cursor:pointer;padding-left:10px;}
+        .post-data-list li:hover{background-color:#f6f6f6;}
+    </style>
+</head>
+<body>
+    
+    <div class="wrap">
+        <h1>模拟接口</h1>
+        <div class="ui-form" id="J-wrap">
+            <ul class="ui-form-ul pt20">
+                <li>
+                    <label class="ui-form-label" for="J-url">
+                        链接:
+                    </label>
+                    <div class="ui-form-cnt">
+                        <input type="text" id="J-url" class="ui-text" placeholder="后端接口链接">
+                    </div>
+                </li>
+                <li>
+                    <div class="ui-form-label">请求类型:</div>
+                    <div class="ui-form-cnt" id="J-type">
+                        <label class="ui-form-radio"><input checked name="type" type="radio" value="post" />POST</label> 
+                        <label class="ui-form-radio"><input type="radio" name="type" value="get" />GET</label> 
+                    </div>
+                </li>
+                <li>
+                    <div class="ui-form-label">响应类型:</div>
+                    <div class="ui-form-cnt" id="J-data-type">
+                        <label class="ui-form-radio"><input checked name="data-type" type="radio" value="json" />json</label> 
+                        <label class="ui-form-radio"><input name="data-type" type="radio" value="jsonp" />jsonp</label> 
+                        <label class="ui-form-radio"><input name="data-type" type="radio" value="html" />html</label> 
+                    </div>
+                </li>
+                <li>
+                    <div class="ui-form-label">发送数据:</div>
+                    <div class="ui-form-cnt post-data">
+                        <form action="" id="J-data-form" autocomplete="off" onsubmit="return false;">
+                            <div class="post-data-list">
+                                <ul id="J-data-list"></ul>
+                            </div>
+
+                            <!-- 添加数据 -->
+                            <div class="post-data-add">
+                                <input type="text" id="J-data-key" placeholder="数据key" class="ui-text"> <span>=</span> <input id="J-data-val" placeholder="数据val" type="text" class="ui-text"> <input type="button" id="J-data-btn" value="添加">
+                            </div>
+                        </form>
+                    </div>
+                </li>
+                <li>
+                    <div class="ui-form-label">响应数据:</div>
+                    <div class="ui-form-cnt" id="J-response">
+                        请先发送数据!
+                    </div>
+                </li>
+                <li>
+                    <button class="ui-btn" id="J-post">
+                        <span>请求</span>
+                    </button>
+                </li>
+                <li id="J-tips" class="ui-form-error">
+                    
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+
+
+
+    <script type="text/javascript" src="../../src/global.js?2012456" id="seajsnode"></script>
+    <script type="text/javascript">
+        seajs.use('demo/debug-api');
+    </script>
+</body>
+</html>

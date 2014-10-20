@@ -1,0 +1,52 @@
+@charset "UTF-8";
+/**
+ * ajaxpage插件样式
+ */
+
+
+.ui-ajax{
+    position:relative;
+    font-size:16px;
+}
+.ui-ajax-loading{
+    background:url('/res/img/loading-32-32.gif') center center no-repeat;
+    height:100px;
+    overflow:hidden;
+    text-indent:-9999em;
+    text-align:center;
+}
+.ui-ajax-loading.success{
+    height:50px;
+    line-height:50px;
+    text-indent:0;
+    background:none;
+}
+.ui-ajax-loading.success span{
+    background:url('/res/img/loading-16-16.gif') left center no-repeat;
+    padding-left:26px;
+    display:inline-block;
+}
+.ui-ajax-error{
+    text-align:center;
+    display:none;
+    line-height:30px;
+    cursor:pointer;
+}
+.ui-ajax-error:hover{
+    background-color:#f6f6f6;
+}
+
+.ui-ajax-mask{
+    position:absolute;
+    height:100%;
+    width:100%;
+    z-index:100;
+    left:0;top:0;
+    background-color:#fff;
+    opacity:0.2;
+    filter: alpha(opacity=20);
+}
+.ui-ajax > div{
+    position:relative;
+    z-index:99;
+}

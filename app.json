@@ -1,0 +1,29 @@
+{
+    "task":{
+    },
+    "css": {
+        "global": {
+            "cwd": "ui/css/",
+            "src": [
+                "reset.css",
+                "ui.css"
+            ],
+            "dest": "global.css"
+        }
+    },
+    "js": {
+        "global": {
+            "noCmd": [
+                "seajs/sea.js",
+                "seajs/sea-config.js"
+            ],
+            "src": [
+                "module/jquery.js",
+                "module/tools.js"
+            ],
+            "dest": "global.js"
+        }
+    },
+    "copy": {
+    }
+}
